@@ -15,49 +15,49 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Samuel Adu | Portfolio Website</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Frontend Mentor | Insure Project</title>
   </head>
 
   <body>
-    <header>
+    <header class="">
       <div class="container">
         <div class="header">
-          <div class="logo">
-            <img src="images/logo.svg" alt="" />
-          </div>
+          <img src="../images/logo.svg" alt="" />
+
           <button type="menu" class="nav-toggle" aria-label="toggle navigation">
             <img
-              src="images/icons/hamburger.svg"
+              src="../images/icons/hamburger.svg"
               class="hamburger-open"
               aria-hidden="true"
             />
             <img
-              src="images/icons/close.svg"
+              src="../images/icons/close.svg"
               class="hamburger-close"
               aria-hidden="true"
             />
           </button>
+
           <nav role="navigation" class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="index.html"> Home</a>
+                <a class="nav__link" href="../index.html"> Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html">Portfolio</a>
+                <a class="nav__link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Resume</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html">Contact Me</a>
+                <a class="nav__link" href="contact.html">Contact Me</a>
               </li>
             </ul>
           </nav>
@@ -65,80 +65,112 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
+    <div class="container">
+      <section class="hero">
         <picture class="hero__img">
           <source
             media="(min-width: 800px)"
-            srcset="images/homepage/desktop/image-homepage-hero.jpg"
+            srcset="../images/detail/desktop/image-insure-hero.jpg"
           />
           <source
             media="(min-width: 600px)"
-            srcset="images/homepage/tablet/image-homepage-hero.jpg"
+            srcset="../images/detail/tablet/image-insure-hero.jpg"
           />
-          <img src="images/homepage/mobile/image-homepage-hero.jpg" alt="" />
+          <img src="../images/detail/mobile/image-insure-hero.jpg" alt="" />
         </picture>
+      </section>
 
-        <div class="intro">
-          <h1 class="main-heading">
-            Hey, I’m Samuel Adu a Budding Front-End Developer
-          </h1>
-          <a href="#about" class="btn btn--primary btn-group">
-            <img src="images/icons/down-arrows.svg" class="down-arrows" />About
-            Me
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <main>
-      <div class="container">
-        <section id="about" class="about">
-          <picture>
-            <source
-              media="(min-width: 800px)"
-              srcset="images/homepage/desktop/image-homepage-profile.jpg"
-            />
-            <source
-              media="(min-width: 600px)"
-              srcset="images/homepage/tablet/image-homepage-profile.jpg"
-            />
-            <img
-              src="images/homepage/mobile/image-homepage-profile.jpg"
-              alt="profile picture"
-            />
-          </picture>
-
-          <div class="">
-            <h2 class="heading">About Me</h2>
-            <p>
-              I’m a junior front-end developer looking for a new role in an
-              exciting company. I focus on writing accessible HTML, using modern
-              CSS practices and writing clean JavaScript. When writing
-              JavaScript code, I mostly use React, but I can adapt to whatever
-              tools are required. I’m based in Lagos, Nigeria, but I’m happy
-              working remotely and have experience in remote teams. When I’m not
-              coding, you’ll find me outdoors. I love being out in nature
-              whether that’s going for a walk, run or cycling. I’d love you to
-              check out my work.
-            </p>
-            <a href="pages/portfolio.html" class="btn btn--secondary">
-              Go to Portfolio
-            </a>
-          </div>
-        </section>
-
-        <section id="contact" class="contact contact-me">
-          <p class="heading contact-text">
-            Interested in doing a project together?
+      <section class="project">
+        <div class="project-intro">
+          <h2 class="heading">Insure</h2>
+          <p class="p-2">
+            This was a small project which mostly consisted of HTML and CSS. I
+            built a fully-responsive landing page. The only JavaScript this
+            project required was to enable the toggling of the mobile
+            navigation.
           </p>
-          <span class="contact-line"></span>
-          <a href="pages/contact.html" class="btn btn--secondary">
-            Contact Me
+          <p class="p-cyan">Interaction Design / Front End Development</p>
+          <p class="p-cyan">HTML / CSS / JS</p>
+          <a href="#" class="btn btn--secondary">Visit Website</a>
+        </div>
+
+        <div class="project-details">
+          <div class="project-background">
+            <h3 class="sub-heading">Project Background</h3>
+            <p class="p-2">
+              This project was a front-end challenge from Frontend Mentor. It’s
+              a platform that enables you to practice building websites to a
+              design and project brief. Each challenge includes mobile and
+              desktop designs to show how the website should look at different
+              screen sizes. Creating these projects has helped me refine my
+              workflow and solve real-world coding problems. I’ve learned
+              something new with each project, helping me to improve and adapt
+              my style.
+            </p>
+          </div>
+
+          <div class="project-preview">
+            <h3 class="sub-heading">Static Previews</h3>
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="../images/detail/desktop/image-insure-preview-1.jpg"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="../images/detail/tablet/image-insure-preview-1.jpg"
+              />
+              <img
+                src="../images/detail/mobile/image-insure-preview-1.jpg"
+                alt=""
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="../images/detail/desktop/image-insure-preview-2.jpg"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="../images/detail/tablet/image-insure-preview-2.jpg"
+              />
+              <img
+                src="../images/detail/mobile/image-insure-preview-2.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="prev">
+          <a href="bookmark.html">
+            <img src="../images/icons/arrow-left.svg" alt="" />
           </a>
-        </section>
-      </div>
-    </main>
+          <div>
+            <h3 class="sub-heading">Bookmark</h3>
+            <p class="p-faint">Previous Project</p>
+          </div>
+        </div>
+
+        <div class="next">
+          <a href="fylo.html">
+            <img src="../images/icons/arrow-right.svg" alt="" />
+          </a>
+          <div>
+            <h3 class="sub-heading">Fylo</h3>
+            <p class="p-faint">Next Project</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="heading">Interested in doing a project together?</h2>
+        <a href="contact.html" class="btn btn--secondary"> Contact Me </a>
+      </section>
+    </div>
 
     <footer>
       <div class="container">
@@ -155,13 +187,13 @@
             </div>
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="index.html"> Home </a>
+                <a class="nav__link" href="../index.html"> Home </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html"> Portfolio </a>
+                <a class="nav__link" href="portfolio.html"> Portfolio </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html"> Contact Me </a>
+                <a class="nav__link" href="contact.html"> Contact Me </a>
               </li>
             </ul>
           </div>
@@ -204,6 +236,6 @@
       </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

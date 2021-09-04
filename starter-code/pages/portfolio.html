@@ -15,15 +15,15 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Samuel Adu | Portfolio Website</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Frontend Mentor | My Projects</title>
   </head>
 
   <body>
@@ -31,16 +31,16 @@
       <div class="container">
         <div class="header">
           <div class="logo">
-            <img src="images/logo.svg" alt="" />
+            <img src="../images/logo.svg" alt="" />
           </div>
           <button type="menu" class="nav-toggle" aria-label="toggle navigation">
             <img
-              src="images/icons/hamburger.svg"
+              src="../images/icons/hamburger.svg"
               class="hamburger-open"
               aria-hidden="true"
             />
             <img
-              src="images/icons/close.svg"
+              src="../images/icons/close.svg"
               class="hamburger-close"
               aria-hidden="true"
             />
@@ -48,16 +48,16 @@
           <nav role="navigation" class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="index.html"> Home</a>
+                <a class="nav__link" href="../index.html"> Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html">Portfolio</a>
+                <a class="nav__link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Resume</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html">Contact Me</a>
+                <a class="nav__link" href="contact.html">Contact Me</a>
               </li>
             </ul>
           </nav>
@@ -65,80 +65,125 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <picture class="hero__img">
+    <div class="container">
+      <section class="portfolio__item manage">
+        <picture class="portfolio__img">
           <source
             media="(min-width: 800px)"
-            srcset="images/homepage/desktop/image-homepage-hero.jpg"
+            srcset="../images/portfolio/desktop/image-portfolio-manage.jpg"
           />
           <source
             media="(min-width: 600px)"
-            srcset="images/homepage/tablet/image-homepage-hero.jpg"
+            srcset="../images/portfolio/tablet/image-portfolio-manage.jpg"
           />
-          <img src="images/homepage/mobile/image-homepage-hero.jpg" alt="" />
+          <img
+            src="../images/portfolio/mobile/image-portfolio-manage.jpg"
+            alt=""
+          />
+        </picture>
+        <div class="portfolio__body">
+          <h2 class="heading">Manage</h2>
+          <p class="p-2">
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            testimonial slider.
+          </p>
+          <a href="manage.html" class="btn btn--secondary">View Project</a>
+        </div>
+      </section>
+
+      <section class="portfolio__item bookmark">
+        <picture class="portfolio__img">
+          <source
+            media="(min-width: 800px)"
+            srcset="../images/portfolio/desktop/image-portfolio-bookmark.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../images/portfolio/tablet/image-portfolio-bookmark.jpg"
+          />
+          <img
+            src="../images/portfolio/mobile/image-portfolio-bookmark.jpg"
+            alt=""
+          />
         </picture>
 
-        <div class="intro">
-          <h1 class="main-heading">
-            Hey, I’m Samuel Adu a Budding Front-End Developer
-          </h1>
-          <a href="#about" class="btn btn--primary btn-group">
-            <img src="images/icons/down-arrows.svg" class="down-arrows" />About
-            Me
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <main>
-      <div class="container">
-        <section id="about" class="about">
-          <picture>
-            <source
-              media="(min-width: 800px)"
-              srcset="images/homepage/desktop/image-homepage-profile.jpg"
-            />
-            <source
-              media="(min-width: 600px)"
-              srcset="images/homepage/tablet/image-homepage-profile.jpg"
-            />
-            <img
-              src="images/homepage/mobile/image-homepage-profile.jpg"
-              alt="profile picture"
-            />
-          </picture>
-
-          <div class="">
-            <h2 class="heading">About Me</h2>
-            <p>
-              I’m a junior front-end developer looking for a new role in an
-              exciting company. I focus on writing accessible HTML, using modern
-              CSS practices and writing clean JavaScript. When writing
-              JavaScript code, I mostly use React, but I can adapt to whatever
-              tools are required. I’m based in Lagos, Nigeria, but I’m happy
-              working remotely and have experience in remote teams. When I’m not
-              coding, you’ll find me outdoors. I love being out in nature
-              whether that’s going for a walk, run or cycling. I’d love you to
-              check out my work.
-            </p>
-            <a href="pages/portfolio.html" class="btn btn--secondary">
-              Go to Portfolio
-            </a>
-          </div>
-        </section>
-
-        <section id="contact" class="contact contact-me">
-          <p class="heading contact-text">
-            Interested in doing a project together?
+        <div class="portfolio__body">
+          <h2 class="heading">Bookmark</h2>
+          <p class="p-2">
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            features section.
           </p>
-          <span class="contact-line"></span>
-          <a href="pages/contact.html" class="btn btn--secondary">
-            Contact Me
-          </a>
-        </section>
-      </div>
-    </main>
+          <a href="bookmark.html" class="btn btn--secondary">View Project</a>
+        </div>
+      </section>
+
+      <section class="portfolio__item insure">
+        <picture class="portfolio__img">
+          <source
+            media="(min-width: 800px)"
+            srcset="../images/portfolio/desktop/image-portfolio-insure.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../images/portfolio/tablet/image-portfolio-insure.jpg"
+          />
+          <img
+            src="../images/portfolio/mobile/image-portfolio-insure.jpg"
+            alt=""
+          />
+        </picture>
+
+        <div class="portfolio__body">
+          <h2 class="heading">Insure</h2>
+          <p class="p-2">
+            This was a small project which mostly consisted of HTML and CSS. I
+            built a fully-responsive landing page. The only JavaScript this
+            project required was to enable the toggling of the mobile
+            navigation.
+          </p>
+          <a href="insure.html" class="btn btn--secondary">View Project</a>
+        </div>
+      </section>
+
+      <section class="portfolio__item fylo">
+        <picture class="portfolio__img">
+          <source
+            media="(min-width: 800px)"
+            srcset="../images/portfolio/desktop/image-portfolio-fylo.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../images/portfolio/tablet/image-portfolio-fylo.jpg"
+          />
+          <img
+            src="../images/portfolio/mobile/image-portfolio-fylo.jpg"
+            alt=""
+          />
+        </picture>
+
+        <div class="portfolio__body">
+          <h2 class="heading">Fylo</h2>
+          <p class="p-2">
+            This project was built in pure HTML and CSS. I had mobile and
+            desktop designs to work to and built it so that it was
+            fully-responsive. I took a mobile-first approach and used modern CSS
+            like Flexbox and Grid for layout purposes.
+          </p>
+          <a href="fylo.html" class="btn btn--secondary">View Project</a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="heading contact-text">
+          Interested in doing a project together?
+        </h2>
+        <a href="contact.html" class="btn btn--secondary"> Contact Me </a>
+      </section>
+    </div>
 
     <footer>
       <div class="container">
@@ -155,13 +200,13 @@
             </div>
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="index.html"> Home </a>
+                <a class="nav__link" href="../index.html"> Home </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html"> Portfolio </a>
+                <a class="nav__link" href="portfolio.html"> Portfolio </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html"> Contact Me </a>
+                <a class="nav__link" href="contact.html"> Contact Me </a>
               </li>
             </ul>
           </div>
@@ -204,6 +249,6 @@
       </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

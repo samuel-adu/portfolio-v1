@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -15,49 +14,44 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500&family=Public+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Samuel Adu | Portfolio Website</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Frontend Mentor | Contact Me</title>
   </head>
 
   <body>
-    <header>
+    <header class="">
       <div class="container">
         <div class="header">
-          <div class="logo">
-            <img src="images/logo.svg" alt="" />
-          </div>
+          <img src="../images/logo.svg" alt="" />
+
           <button type="menu" class="nav-toggle" aria-label="toggle navigation">
             <img
-              src="images/icons/hamburger.svg"
+              src="../images/icons/hamburger.svg"
               class="hamburger-open"
               aria-hidden="true"
             />
             <img
-              src="images/icons/close.svg"
+              src="../images/icons/close.svg"
               class="hamburger-close"
               aria-hidden="true"
             />
           </button>
+
           <nav role="navigation" class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="index.html"> Home</a>
+                <a class="nav__link" href="../index.html"> Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html">Portfolio</a>
+                <a class="nav__link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Resume</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html">Contact Me</a>
+                <a class="nav__link" href="contact.html">Contact Me</a>
               </li>
             </ul>
           </nav>
@@ -65,80 +59,68 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <picture class="hero__img">
-          <source
-            media="(min-width: 800px)"
-            srcset="images/homepage/desktop/image-homepage-hero.jpg"
-          />
-          <source
-            media="(min-width: 600px)"
-            srcset="images/homepage/tablet/image-homepage-hero.jpg"
-          />
-          <img src="images/homepage/mobile/image-homepage-hero.jpg" alt="" />
-        </picture>
+    <div class="container">
+      <section class="contact-body hero">
+        <h2 class="heading">Get in Touch</h2>
 
-        <div class="intro">
-          <h1 class="main-heading">
-            Hey, I’m Samuel Adu a Budding Front-End Developer
-          </h1>
-          <a href="#about" class="btn btn--primary btn-group">
-            <img src="images/icons/down-arrows.svg" class="down-arrows" />About
-            Me
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <main>
-      <div class="container">
-        <section id="about" class="about">
-          <picture>
-            <source
-              media="(min-width: 800px)"
-              srcset="images/homepage/desktop/image-homepage-profile.jpg"
-            />
-            <source
-              media="(min-width: 600px)"
-              srcset="images/homepage/tablet/image-homepage-profile.jpg"
-            />
-            <img
-              src="images/homepage/mobile/image-homepage-profile.jpg"
-              alt="profile picture"
-            />
-          </picture>
-
-          <div class="">
-            <h2 class="heading">About Me</h2>
-            <p>
-              I’m a junior front-end developer looking for a new role in an
-              exciting company. I focus on writing accessible HTML, using modern
-              CSS practices and writing clean JavaScript. When writing
-              JavaScript code, I mostly use React, but I can adapt to whatever
-              tools are required. I’m based in Lagos, Nigeria, but I’m happy
-              working remotely and have experience in remote teams. When I’m not
-              coding, you’ll find me outdoors. I love being out in nature
-              whether that’s going for a walk, run or cycling. I’d love you to
-              check out my work.
-            </p>
-            <a href="pages/portfolio.html" class="btn btn--secondary">
-              Go to Portfolio
-            </a>
-          </div>
-        </section>
-
-        <section id="contact" class="contact contact-me">
-          <p class="heading contact-text">
-            Interested in doing a project together?
+        <div>
+          <p class="p-2">
+            I’d love to hear about what you’re working on and how I could help.
+            I’m currently looking for a new role and am open to a wide range of
+            opportunities. My preference would be to find a position in a
+            company in Lagos. But I’m also happy to hear about opportunites that
+            don’t fit that description. I’m a hard-working and positive person
+            who will always approach each task with a sense of purpose and
+            attention to detail. Please do feel free to check out my online
+            profiles below and get in touch using the form.
           </p>
-          <span class="contact-line"></span>
-          <a href="pages/contact.html" class="btn btn--secondary">
-            Contact Me
-          </a>
-        </section>
-      </div>
-    </main>
+
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href=""><img src="../images/icons/github.svg" alt="" /></a>
+            </li>
+            <li class="social-list__item">
+              <a href=""><img src="../images/icons/twitter.svg" alt="" /></a>
+            </li>
+            <li class="social-list__item">
+              <a href=""><img src="../images/icons/linkedin.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h2 class="heading">Contact Me</h2>
+
+        <form action="" method="POST">
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            name="user_name"
+            id="name"
+            placeholder="Jane Appleseed"
+          /><br />
+
+          <label for="mail">Email Address</label><br />
+          <input
+            type="email"
+            name="user_email"
+            id="mail"
+            placeholder="email@example.com"
+          /><br />
+
+          <label for="msg">Message</label><br />
+          <textarea
+            name="user_message"
+            id="msg"
+            placeholder="How can I help?"
+          ></textarea
+          ><br />
+
+          <button type="submit" class="btn btn--primary">SEND MESSAGE</button>
+        </form>
+      </section>
+    </div>
 
     <footer>
       <div class="container">
@@ -155,13 +137,13 @@
             </div>
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="index.html"> Home </a>
+                <a class="nav__link" href="../index.html"> Home </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html"> Portfolio </a>
+                <a class="nav__link" href="portfolio.html"> Portfolio </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html"> Contact Me </a>
+                <a class="nav__link" href="contact.html"> Contact Me </a>
               </li>
             </ul>
           </div>
@@ -204,6 +186,6 @@
       </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
