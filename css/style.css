@@ -33,7 +33,8 @@ body {
   background-color: var(--bg-light);
 }
 
-img {
+img,
+picture {
   max-width: 100%;
 }
 
@@ -315,6 +316,10 @@ footer .nav__link {
   }
 
   /* Main */
+  main {
+    min-height: calc(100vh - 82px);
+  }
+
   .container {
     margin: 0 auto;
   }

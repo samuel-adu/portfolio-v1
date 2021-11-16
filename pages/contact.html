@@ -21,106 +21,120 @@
   </head>
 
   <body>
-    <header class="">
+    <main>
+      <header class="">
+        <div class="container">
+          <div class="header">
+            <img src="../images/logo.svg" alt="" />
+
+            <button
+              type="menu"
+              class="nav-toggle"
+              aria-label="toggle navigation"
+            >
+              <img
+                src="../images/icons/hamburger.svg"
+                class="hamburger-open"
+                aria-hidden="true"
+              />
+              <img
+                src="../images/icons/close.svg"
+                class="hamburger-close"
+                aria-hidden="true"
+              />
+            </button>
+
+            <nav role="navigation" class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="../index.html"> Home</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Resume</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="contact.html">Contact Me</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
       <div class="container">
-        <div class="header">
-          <img src="../images/logo.svg" alt="" />
+        <section class="contact-body hero">
+          <h2 class="heading">Get in Touch</h2>
 
-          <button type="menu" class="nav-toggle" aria-label="toggle navigation">
-            <img
-              src="../images/icons/hamburger.svg"
-              class="hamburger-open"
-              aria-hidden="true"
-            />
-            <img
-              src="../images/icons/close.svg"
-              class="hamburger-close"
-              aria-hidden="true"
-            />
-          </button>
+          <div>
+            <p class="p-2">
+              I’d love to hear about what you’re working on and how I could
+              help. I’m currently looking for a new role and am open to a wide
+              range of opportunities. My preference would be to find a position
+              in a company in Lagos. But I’m also happy to hear about
+              opportunites that don’t fit that description. I’m a hard-working
+              and positive person who will always approach each task with a
+              sense of purpose and attention to detail. Please do feel free to
+              check out my online profiles below and get in touch using the
+              form.
+            </p>
 
-          <nav role="navigation" class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="../index.html"> Home</a>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="https://github.com/theadusamuel" target="_blank">
+                  <img src="../images/icons/github.svg" alt="" />
+                </a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="portfolio.html">Portfolio</a>
+              <li class="social-list__item">
+                <a href=""><img src="../images/icons/twitter.svg" alt="" /></a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Resume</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="contact.html">Contact Me</a>
+              <li class="social-list__item">
+                <a
+                  href="http://www.linkedin.com/in/theadusamuel"
+                  target="_blank"
+                >
+                  <img src="../images/icons/linkedin.svg" alt="" />
+                </a>
               </li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </section>
+
+        <section class="contact-form">
+          <h2 class="heading">Contact Me</h2>
+
+          <form action="" method="POST">
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              name="user_name"
+              id="name"
+              placeholder="Jane Appleseed"
+            /><br />
+
+            <label for="mail">Email Address</label><br />
+            <input
+              type="email"
+              name="user_email"
+              id="mail"
+              placeholder="email@example.com"
+            /><br />
+
+            <label for="msg">Message</label><br />
+            <textarea
+              name="user_message"
+              id="msg"
+              placeholder="How can I help?"
+            ></textarea
+            ><br />
+
+            <button type="submit" class="btn btn--primary">SEND MESSAGE</button>
+          </form>
+        </section>
       </div>
-    </header>
-
-    <div class="container">
-      <section class="contact-body hero">
-        <h2 class="heading">Get in Touch</h2>
-
-        <div>
-          <p class="p-2">
-            I’d love to hear about what you’re working on and how I could help.
-            I’m currently looking for a new role and am open to a wide range of
-            opportunities. My preference would be to find a position in a
-            company in Lagos. But I’m also happy to hear about opportunites that
-            don’t fit that description. I’m a hard-working and positive person
-            who will always approach each task with a sense of purpose and
-            attention to detail. Please do feel free to check out my online
-            profiles below and get in touch using the form.
-          </p>
-
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a href=""><img src="../images/icons/github.svg" alt="" /></a>
-            </li>
-            <li class="social-list__item">
-              <a href=""><img src="../images/icons/twitter.svg" alt="" /></a>
-            </li>
-            <li class="social-list__item">
-              <a href=""><img src="../images/icons/linkedin.svg" alt="" /></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="contact-form">
-        <h2 class="heading">Contact Me</h2>
-
-        <form action="" method="POST">
-          <label for="name">Name</label><br />
-          <input
-            type="text"
-            name="user_name"
-            id="name"
-            placeholder="Jane Appleseed"
-          /><br />
-
-          <label for="mail">Email Address</label><br />
-          <input
-            type="email"
-            name="user_email"
-            id="mail"
-            placeholder="email@example.com"
-          /><br />
-
-          <label for="msg">Message</label><br />
-          <textarea
-            name="user_message"
-            id="msg"
-            placeholder="How can I help?"
-          ></textarea
-          ><br />
-
-          <button type="submit" class="btn btn--primary">SEND MESSAGE</button>
-        </form>
-      </section>
-    </div>
+    </main>
 
     <footer>
       <div class="container">
@@ -150,7 +164,11 @@
 
           <ul class="social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href="">
+              <a
+                class="social-list__link"
+                href="https://github.com/theadusamuel"
+                target="_blank"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
                   <path
                     fill="#33323D"
@@ -171,7 +189,11 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="">
+              <a
+                class="social-list__link"
+                href="http://www.linkedin.com/in/theadusamuel"
+                target="_blank"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                   <path
                     class="icon linkedin"
