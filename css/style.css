@@ -344,10 +344,12 @@ footer .nav__link {
   .portfolio__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   .portfolio__body {
     width: 80%;
+    padding-inline-start: 2em;
     margin: 0 auto;
   }
 
