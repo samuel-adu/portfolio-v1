@@ -93,35 +93,44 @@
 
     <main>
       <div class="container">
-        <section id="about" class="about">
-          <picture>
-            <source
-              media="(min-width: 800px)"
-              srcset="images/homepage/avi.jpg"
-            />
-            <source
-              media="(min-width: 600px)"
-              srcset="images/homepage/avi.jpg"
-            />
-            <img src="images/homepage/avi.jpg" alt="profile picture" />
-          </picture>
+        <section>
+          <div id="about" class="about">
+            <div>
+              <picture class="avi">
+                <source
+                  media="(min-width: 800px)"
+                  srcset="images/homepage/avi.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="images/homepage/avi.jpg"
+                />
+                <img
+                  src="images/homepage/avi.jpg"
+                  alt="profile picture"
+                  class="avi"
+                />
+              </picture>
+            </div>
 
-          <div class="">
-            <h2 class="heading">About Me</h2>
-            <p>
-              I’m a junior front-end developer looking for a new role in an
-              exciting company. I focus on writing accessible HTML, using modern
-              CSS practices and writing clean JavaScript. When writing
-              JavaScript code, I mostly use React, but I can adapt to whatever
-              tools are required. I’m based in Lagos, Nigeria, but I’m happy
-              working remotely and have experience in remote teams. When I’m not
-              coding, you’ll find me outdoors. I love being out in nature
-              whether that’s going for a walk, run or cycling. I’d love you to
-              check out my work.
-            </p>
-            <a href="pages/portfolio.html" class="btn btn--secondary">
-              Go to Portfolio
-            </a>
+            <div class="about__body">
+              <h2 class="heading">About Me</h2>
+              <p>
+                I’m a junior front-end developer looking for a new role in an
+                exciting company. I focus on writing accessible HTML, using
+                modern CSS practices and writing clean JavaScript. When writing
+                JavaScript code, I mostly use React, but I can adapt to whatever
+                tools are required. I’m based in Lagos, Nigeria, but I’m happy
+                working remotely and have experience in remote teams. When I’m
+                not coding, you’ll find me outdoors. I never miss playing
+                football on saturday morning because I can't afford gym
+                membership and I need to stay fit. I’d love you to check out my
+                work.
+              </p>
+              <a href="pages/portfolio.html" class="btn btn--secondary">
+                Go to Portfolio
+              </a>
+            </div>
           </div>
         </section>
 

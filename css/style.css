@@ -339,6 +339,11 @@ footer .nav__link {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    align-items: center;
+  }
+
+  .about__body {
+    padding-inline: 4em;
   }
 
   .portfolio__item {
