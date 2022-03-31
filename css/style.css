@@ -417,8 +417,8 @@ footer .nav__link {
 
 @media (min-width: 800px) {
   .container {
-    width: 90%;
-    max-width: 1110px;
+    /* width: 90%; */
+    max-width: 1300px;
   }
 
   .project {
