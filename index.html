@@ -48,7 +48,9 @@
                 <a class="nav__link" href="pages/portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html">Contact Me</a>
+                <a class="btn btn--secondary" href="pages/contact.html">
+                  Contact Me
+                </a>
               </li>
             </ul>
           </nav>
@@ -56,67 +58,109 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <picture class="hero__img">
-          <source
-            media="(min-width: 800px)"
-            srcset="images/homepage/desktop/image-homepage-hero@2x.jpg"
-          />
-          <source
-            media="(min-width: 600px)"
-            srcset="images/homepage/tablet/image-homepage-hero@2x.jpg"
-          />
-          <img src="images/homepage/mobile/image-homepage-hero@2x.jpg" alt="" />
-        </picture>
-
+    <div class="container">
+      <main>
         <div class="intro">
-          <h1>Hey, I’m Samuel Adu and I love building beautiful websites</h1>
+          <h1><span>Hey, I’m Samuel Adu, a</span> Frontend Developer</h1>
 
           <div class="btn-group">
-            <a class="btn cta">
-              <img src="images/icons/down-arrows.svg" />
+            <a href="pages/contact.html" class="btn btn--secondary">
+              <span class="cta-img">
+                <img src="images/icons/down-arrows.svg" />
+              </span>
+              Contact Me
             </a>
-            <a href="#about" class="btn btn--secondary"> About Me </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <main>
-      <div class="container">
-        <section>
-          <div id="about" class="about">
-            <!-- <div></div> -->
+        <section class="main-content">
+          <div class="my-skills">
+            <h2>My Skills</h2>
 
-            <div class="about__body">
-              <h2>About Me</h2>
-              <p>
-                I’m a front-end developer looking for a new role in an exciting
-                company. I focus on writing accessible HTML, using modern CSS
-                practices and writing clean JavaScript. When writing JavaScript
-                code, I mostly use React, but I can adapt to whatever tools are
-                required. I’m based in Lagos, Nigeria, but I’m happy working
-                remotely and have experience in remote teams. When I’m not
-                coding, you’ll find me outdoors. I never miss playing football
-                on saturday morning because I can't afford gym membership and I
-                need to stay fit. I’d love you to check out my work.
-              </p>
-              <a href="pages/portfolio.html" class="btn btn--primary">
-                <!-- Go to Portfolio -->
-                View My Projects
-              </a>
+            <div class="skills">
+              <div class="skill">
+                <img
+                  src="images/icons/react-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>React</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/js-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>JavaScript</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/bootstrap-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>Bootstrap</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/css3-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>CSS</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/html5-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>HTML</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/git-alt-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>Git</figcaption>
+              </div>
             </div>
           </div>
-        </section>
 
-        <section id="contact" class="contact">
-          <h2>Interested in doing a project together?</h2>
-          <span class="contact-line"></span>
-          <a href="pages/contact.html" class="btn btn--primary"> Contact Me </a>
+          <div id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+              I’m a front-end developer looking for a new role in an exciting
+              company. I focus on writing accessible HTML, using modern CSS
+              practices and writing clean JavaScript. When writing JavaScript
+              code, I mostly use React, but I can adapt to whatever tools are
+              required. I’m based in Lagos, Nigeria, but I’m happy working
+              remotely and have experience in remote teams. When I’m not coding,
+              you’ll find me outdoors. I never miss playing football on saturday
+              morning because I can't afford gym membership and I need to stay
+              fit. I’d love you to check out my work.
+            </p>
+            <a href="pages/portfolio.html" class="btn btn--primary">
+              <!-- Go to Portfolio -->
+              View My Projects
+            </a>
+          </div>
         </section>
-      </div>
-    </main>
+      </main>
+
+      <section id="contact" class="contact">
+        <h2>Interested in doing a project together?</h2>
+        <span class="contact-line"></span>
+        <a href="pages/contact.html" class="btn btn--primary"> Contact Me </a>
+      </section>
+    </div>
 
     <footer>
       <div class="container">
