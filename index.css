@@ -197,6 +197,9 @@ header {
   padding: 2em 0;
 }
 
+.about {
+  padding-top: 2rem;
+}
 /* Main ======================================================== */
 .card::before {
   content: "";
