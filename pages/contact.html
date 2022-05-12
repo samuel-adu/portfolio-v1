@@ -20,46 +20,46 @@
   </head>
 
   <body>
-    <header class="">
-      <div class="container">
-        <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
           <img src="../images/logo.svg" alt="" />
-
-          <button type="menu" class="nav-toggle" aria-label="toggle navigation">
-            <img
-              src="../images/icons/hamburger.svg"
-              class="hamburger-open"
-              aria-hidden="true"
-            />
-            <img
-              src="../images/icons/close.svg"
-              class="hamburger-close"
-              aria-hidden="true"
-            />
-          </button>
-
-          <nav role="navigation" class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="../index.html"> Home</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link active-page" href="contact.html"
-                  >Contact Me</a
-                >
-              </li>
-            </ul>
-          </nav>
         </div>
+
+        <button type="menu" class="nav-toggle" aria-label="toggle navigation">
+          <img
+            src="../images/icons/hamburger.svg"
+            class="hamburger-open"
+            aria-hidden="true"
+          />
+          <img
+            src="../images/icons/close.svg"
+            class="hamburger-close"
+            aria-hidden="true"
+          />
+        </button>
+
+        <nav role="navigation" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html"> Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link active-page" href="contact.html"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
 
     <main>
       <div class="container">
-        <section class="contact-body hero">
+        <section class="contact-body">
           <h2>Get in Touch</h2>
 
           <div>
@@ -97,31 +97,37 @@
           <h2>Contact Me</h2>
 
           <form action="" method="POST">
-            <label for="name">Name</label><br />
+            <label for="name">Name</label>
+            <br />
             <input
               type="text"
               name="user_name"
               id="name"
               placeholder="Jane Appleseed"
-            /><br />
+            />
+            <br />
 
-            <label for="mail">Email Address</label><br />
+            <label for="mail">Email Address</label>
+            <br />
             <input
               type="email"
               name="user_email"
               id="mail"
               placeholder="email@example.com"
-            /><br />
+            />
+            <br />
 
-            <label for="msg">Message</label><br />
+            <label for="msg">Message</label>
+            <br />
             <textarea
               name="user_message"
               id="msg"
               placeholder="How can I help?"
-            ></textarea
-            ><br />
+            >
+            </textarea>
+            <br />
 
-            <button type="submit" class="btn btn--secondary">
+            <button type="submit" class="btn btn--secondary btn-submit">
               SEND MESSAGE
             </button>
           </form>
@@ -132,7 +138,7 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="navbar">
+          <div class="footer-navbar">
             <div class="logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
                 <path
@@ -150,7 +156,9 @@
                 <a class="nav__link" href="portfolio.html"> Portfolio </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="contact.html"> Contact Me </a>
+                <a class="btn btn--secondary" href="contact.html">
+                  Contact Me
+                </a>
               </li>
             </ul>
           </div>
