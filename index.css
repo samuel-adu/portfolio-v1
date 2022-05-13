@@ -149,13 +149,23 @@ h3 {
 
 .nav-open .hamburger-close {
   display: block;
+  border: 2px solid var(--bg-primary);
+  padding: 3px;
 }
+
 .nav-open .hamburger-open {
   display: none;
 }
 
 .nav-open .nav {
   display: block;
+  padding: 2em;
+}
+
+.nav-open .btn--secondary {
+  background-color: var(--bg-dark);
+  color: var(--clr-secondary);
+  border: 1px solid var(--bg-light);
 }
 
 /* || Utilities =====================================================*/
