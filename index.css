@@ -70,8 +70,12 @@ h3 {
 h1 {
   font-size: 3.125rem;
   /* font-size: calc(2rem + 3vw); */
-  line-height: 40px;
+  line-height: 50px;
   font-weight: 700;
+}
+
+h1 span {
+  display: block;
 }
 
 h2 {
@@ -436,28 +440,27 @@ label {
     background-color: var(--bg-light);
     position: absolute;
     bottom: 0;
-    width: 35%;
+    width: 40%;
     min-width: 375px;
     padding-right: 1em;
   }
 
   .main-content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
   .skills {
-    justify-content: space-between;
+    align-items: center;
   }
 
   .my-skills {
     order: 2;
-    width: 30%;
+    width: 45%;
   }
 
   .about-me {
-    width: 50%;
+    width: 45%;
   }
 
   .contact-me {
