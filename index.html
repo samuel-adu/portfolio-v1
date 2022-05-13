@@ -4,104 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Samuel Adu | Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Samuel Adu | Frontend Developer</title>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500&family=Public+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+
+        <button type="menu" class="nav-toggle" aria-label="toggle navigation">
+          <img
+            src="images/icons/hamburger.svg"
+            class="hamburger-open"
+            aria-hidden="true"
+          />
+          <img
+            src="images/icons/close.svg"
+            class="hamburger-close"
+            aria-hidden="true"
+          />
+        </button>
+
+        <nav role="navigation" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active-page" href="index.html"> Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="pages/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a class="btn btn--secondary" href="pages/contact.html">
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <header>
       <div class="container">
-        <div class="header">
-          <div class="logo">
-            <img src="images/logo.svg" alt="" />
+        <div class="hero">
+          <picture class="hero__img">
+            <source
+              media="(min-width: 800px)"
+              srcset="images/homepage/desktop/image-homepage-hero@2x.jpg"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="images/homepage/tablet/image-homepage-hero@2x.jpg"
+            />
+            <img
+              src="images/homepage/mobile/image-homepage-hero@2x.jpg"
+              alt=""
+            />
+          </picture>
+        </div>
+
+        <div class="intro">
+          <h1>Hey, I’m Samuel Adu and I am a Frontend Web Developer</h1>
+
+          <div class="btn-group">
+            <a href="#about" class="btn btn--secondary">
+              <span class="cta-img">
+                <img src="images/icons/down-arrows.svg" />
+              </span>
+              About Me
+            </a>
           </div>
-          <button type="menu" class="nav-toggle" aria-label="toggle navigation">
-            <img
-              src="images/icons/hamburger.svg"
-              class="hamburger-open"
-              aria-hidden="true"
-            />
-            <img
-              src="images/icons/close.svg"
-              class="hamburger-close"
-              aria-hidden="true"
-            />
-          </button>
-          <nav role="navigation" class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="index.html"> Home</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html">Contact Me</a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <picture class="hero__img">
-          <source
-            media="(min-width: 800px)"
-            srcset="images/homepage/desktop/image-homepage-hero@2x.jpg"
-          />
-          <source
-            media="(min-width: 600px)"
-            srcset="images/homepage/tablet/image-homepage-hero@2x.jpg"
-          />
-          <img src="images/homepage/mobile/image-homepage-hero@2x.jpg" alt="" />
-        </picture>
-
-        <div class="intro">
-          <h1 class="main-heading">
-            Hey, I’m Samuel and I love building beautiful websites
-          </h1>
-          <a href="#about" class="btn btn--primary btn-group">
-            <img src="images/icons/down-arrows.svg" class="down-arrows" />
-            About Me
-          </a>
-        </div>
-      </div>
-    </section>
-
     <main>
       <div class="container">
-        <section>
-          <div id="about" class="about">
-            <div class="avatar-div">
-              <img
-                src="https://i.ibb.co/TqCp5CG/Avi.jpg"
-                alt="profile picture"
-                class="avatar"
-              />
-            </div>
+        <div class="main-content">
+          <section class="my-skills">
+            <h2>My Skills</h2>
 
-            <div class="about__body">
-              <h2 class="heading">About Me</h2>
+            <div class="skills">
+              <div class="skill">
+                <img
+                  src="images/icons/react-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>React</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/js-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>JavaScript</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/bootstrap-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>Bootstrap</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/css3-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>CSS</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/html5-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>HTML</figcaption>
+              </div>
+
+              <div class="skill">
+                <img
+                  src="images/icons/git-alt-brands.svg"
+                  alt=""
+                  class="skill-icon"
+                />
+                <figcaption>Git</figcaption>
+              </div>
+            </div>
+          </section>
+
+          <section class="about-me">
+            <div id="about" class="about">
+              <h2>About Me</h2>
               <p>
                 I’m a front-end developer looking for a new role in an exciting
                 company. I focus on writing accessible HTML, using modern CSS
@@ -113,29 +169,25 @@
                 on saturday morning because I can't afford gym membership and I
                 need to stay fit. I’d love you to check out my work.
               </p>
-              <a href="pages/portfolio.html" class="btn btn--secondary">
-                Go to Portfolio
+              <a href="pages/portfolio.html" class="btn btn--primary">
+                View My Projects
               </a>
             </div>
-          </div>
-        </section>
-
-        <section id="contact" class="contact contact-me">
-          <p class="heading contact-text">
-            Interested in doing a project together?
-          </p>
-          <span class="contact-line"></span>
-          <a href="pages/contact.html" class="btn btn--secondary">
-            Contact Me
-          </a>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
+
+    <aside id="contact" class="container contact">
+      <h2>Interested in doing a project together?</h2>
+      <span class="contact-line"></span>
+      <a href="pages/contact.html" class="btn btn--primary"> Contact Me </a>
+    </aside>
 
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="navbar">
+          <div class="footer-navbar">
             <div class="logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
                 <path
@@ -160,7 +212,11 @@
 
           <ul class="social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href="">
+              <a
+                class="social-list__link"
+                href="https://github.com/theadusamuel"
+                target="_blank"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
                   <path
                     fill="#33323D"
@@ -169,19 +225,13 @@
                 </svg>
               </a>
             </li>
+
             <li class="social-list__item">
-              <a class="social-list__link" href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
-                  <path
-                    class="icon twitter"
-                    fill="#33323D"
-                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="">
+              <a
+                class="social-list__link"
+                href="https://www.linkedin.com/in/theadusamuel/"
+                target="_blank"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                   <path
                     class="icon linkedin"

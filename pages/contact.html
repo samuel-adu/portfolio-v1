@@ -5,68 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me | Samuel Adu</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="../images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../index.css" />
   </head>
 
   <body>
-    <main>
-      <header class="">
-        <div class="container">
-          <div class="header">
-            <img src="../images/logo.svg" alt="" />
-
-            <button
-              type="menu"
-              class="nav-toggle"
-              aria-label="toggle navigation"
-            >
-              <img
-                src="../images/icons/hamburger.svg"
-                class="hamburger-open"
-                aria-hidden="true"
-              />
-              <img
-                src="../images/icons/close.svg"
-                class="hamburger-close"
-                aria-hidden="true"
-              />
-            </button>
-
-            <nav role="navigation" class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="../index.html"> Home</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="contact.html">Contact Me</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="../images/logo.svg" alt="" />
         </div>
-      </header>
 
+        <button type="menu" class="nav-toggle" aria-label="toggle navigation">
+          <img
+            src="../images/icons/hamburger.svg"
+            class="hamburger-open"
+            aria-hidden="true"
+          />
+          <img
+            src="../images/icons/close.svg"
+            class="hamburger-close"
+            aria-hidden="true"
+          />
+        </button>
+
+        <nav role="navigation" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html"> Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a class="btn btn--secondary active-page" href="contact.html"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
       <div class="container">
-        <section class="contact-body hero">
-          <h2 class="heading">Get in Touch</h2>
+        <section class="contact-body">
+          <h2>Get in Touch</h2>
 
           <div>
-            <p class="p-2">
+            <p>
               I’d love to hear about what you’re working on and how I could
               help. I’m currently looking for a new role and am open to a wide
               range of opportunities. My preference would be to find a position
@@ -85,11 +82,8 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a href=""><img src="../images/icons/twitter.svg" alt="" /></a>
-              </li>
-              <li class="social-list__item">
                 <a
-                  href="http://www.linkedin.com/in/theadusamuel"
+                  href="https://www.linkedin.com/in/theadusamuel"
                   target="_blank"
                 >
                   <img src="../images/icons/linkedin.svg" alt="" />
@@ -100,34 +94,42 @@
         </section>
 
         <section class="contact-form">
-          <h2 class="heading">Contact Me</h2>
+          <h2>Contact Me</h2>
 
           <form action="" method="POST">
-            <label for="name">Name</label><br />
+            <label for="name">Name</label>
+            <br />
             <input
               type="text"
               name="user_name"
               id="name"
               placeholder="Jane Appleseed"
-            /><br />
+            />
+            <br />
 
-            <label for="mail">Email Address</label><br />
+            <label for="mail">Email Address</label>
+            <br />
             <input
               type="email"
               name="user_email"
               id="mail"
               placeholder="email@example.com"
-            /><br />
+            />
+            <br />
 
-            <label for="msg">Message</label><br />
+            <label for="msg">Message</label>
+            <br />
             <textarea
               name="user_message"
               id="msg"
               placeholder="How can I help?"
-            ></textarea
-            ><br />
+            >
+            </textarea>
+            <br />
 
-            <button type="submit" class="btn btn--primary">SEND MESSAGE</button>
+            <button type="submit" class="btn btn--secondary btn-submit">
+              SEND MESSAGE
+            </button>
           </form>
         </section>
       </div>
@@ -136,7 +138,7 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="navbar">
+          <div class="footer-navbar">
             <div class="logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
                 <path
@@ -175,20 +177,9 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
-                  <path
-                    class="icon twitter"
-                    fill="#33323D"
-                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
               <a
                 class="social-list__link"
-                href="http://www.linkedin.com/in/theadusamuel"
+                href="https://www.linkedin.com/in/theadusamuel"
                 target="_blank"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
