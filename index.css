@@ -426,6 +426,10 @@ label {
     align-items: center;
   }
 
+  .nav__list .nav__item:last-child {
+    margin-right: 0;
+  }
+
   .nav__link {
     color: var(--clr-primary);
   }
