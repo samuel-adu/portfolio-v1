@@ -102,8 +102,8 @@ h3 {
 
 .cyan-text {
   color: var(--clr-accent);
-  font-size: 13px;
   font-weight: bold;
+  font-size: 13px;
 }
 
 .faint-text {
@@ -234,6 +234,10 @@ header {
   margin-bottom: 5em;
 }
 
+.secondary-header {
+  margin-bottom: 0;
+}
+
 section {
   margin-bottom: 5em;
 }
@@ -265,7 +269,7 @@ aside {
   align-items: center;
   justify-content: left;
   border-radius: 5px;
-  box-shadow: 3px 3px 5px var(--clr-primary);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   padding: 0.125em 1.5em 0.125em 0.125em;
 }
 
@@ -511,6 +515,7 @@ label {
   }
 
   .bookmark .portfolio__img,
+  .advice .portfolio__img,
   .fylo .portfolio__img {
     order: 2;
   }

@@ -20,42 +20,44 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img src="../images/logo.svg" alt="" />
+    <header class="secondary-header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="../images/logo.svg" alt="" />
+          </div>
+
+          <button type="menu" class="nav-toggle" aria-label="toggle navigation">
+            <img
+              src="../images/icons/hamburger.svg"
+              class="hamburger-open"
+              aria-hidden="true"
+            />
+            <img
+              src="../images/icons/close.svg"
+              class="hamburger-close"
+              aria-hidden="true"
+            />
+          </button>
+
+          <nav role="navigation" class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="../index.html"> Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a class="btn btn--secondary active-page" href="contact.html">
+                  Contact Me
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <button type="menu" class="nav-toggle" aria-label="toggle navigation">
-          <img
-            src="../images/icons/hamburger.svg"
-            class="hamburger-open"
-            aria-hidden="true"
-          />
-          <img
-            src="../images/icons/close.svg"
-            class="hamburger-close"
-            aria-hidden="true"
-          />
-        </button>
-
-        <nav role="navigation" class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="../index.html"> Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a class="btn btn--secondary active-page" href="contact.html">
-                Contact Me
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
+    </header>
 
     <main>
       <div class="container">
