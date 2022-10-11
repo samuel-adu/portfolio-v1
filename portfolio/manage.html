@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Fylo Project | Samuel Adu</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../images/favicon-32x32.png"
-    />
+    <title>Manage | Samuel Adu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,9 +19,10 @@
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <img src="../images/logo.svg" alt="" />
+            <a href="../index.html">
+              <img src="../images/logo.svg" alt="" />
+            </a>
           </div>
-
           <button type="menu" class="nav-toggle" aria-label="toggle navigation">
             <img
               src="../images/icons/hamburger.svg"
@@ -40,17 +35,18 @@
               aria-hidden="true"
             />
           </button>
-
           <nav role="navigation" class="nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="../index.html"> Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="portfolio.html">Portfolio</a>
+                <a class="nav__link" href="../portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
-                <a class="btn btn--secondary" href="contact.html">Contact Me</a>
+                <a class="btn btn--secondary" href="../contact.html">
+                  Contact Me
+                </a>
               </li>
             </ul>
           </nav>
@@ -60,13 +56,16 @@
           <picture class="hero__img">
             <source
               media="(min-width: 800px)"
-              srcset="../images/detail/desktop/image-fylo-hero@2x.jpg"
+              srcset="../images/detail/desktop/image-manage-hero@2x.jpg"
             />
             <source
               media="(min-width: 600px)"
-              srcset="../images/detail/tablet/image-fylo-hero@2x.jpg"
+              srcset="../images/detail/tablet/image-manage-hero@2x.jpg"
             />
-            <img src="../images/detail/mobile/image-fylo-hero@2x.jpg" alt="" />
+            <img
+              src="../images/detail/mobile/image-manage-hero@2x.jpg"
+              alt=""
+            />
           </picture>
         </div>
       </div>
@@ -77,17 +76,16 @@
         <section>
           <div class="project">
             <div class="project-intro">
-              <h2>Fylo</h2>
+              <h2>Manage</h2>
               <p>
-                This project was built in pure HTML and CSS. I had mobile and
-                desktop designs to work to and built it so that it was
-                fully-responsive. I took a mobile-first approach and used modern
-                CSS like Flexbox and Grid for layout purposes.
+                This project required me to build a fully responsive landing
+                page to the designs provided. I used HTML5, along with CSS Grid
+                and JavaScript for the areas that required interactivity, such
+                as the testimonial slider.
               </p>
-
-              <p class="cyan-text">HTML | CSS</p>
+              <p class="cyan-text">HTML | CSS | JS</p>
               <a
-                href="https://fylo-dark-theme-landing-page-silk.vercel.app/"
+                href="http://manage-landing-page-theadusamuel.vercel.app/"
                 target="_blank"
                 class="btn btn--primary"
               >
@@ -112,22 +110,22 @@
 
               <div class="project-preview">
                 <h3>Static Previews</h3>
-                <div class="preview-img">
+                <div class="preview-img preview-img-1">
                   <picture>
                     <source
                       media="(min-width: 800px)"
                       srcset="
-                        ../images/detail/desktop/image-fylo-preview-1@2x.jpg
+                        ../images/detail/desktop/image-manage-preview-1@2x.jpg
                       "
                     />
                     <source
                       media="(min-width: 600px)"
                       srcset="
-                        ../images/detail/tablet/image-fylo-preview-1@2x.jpg
+                        ../images/detail/tablet/image-manage-preview-1@2x.jpg
                       "
                     />
                     <img
-                      src="../images/detail/mobile/image-fylo-preview-1@2x.jpg"
+                      src="../images/detail/mobile/image-manage-preview-1@2x.jpg"
                       alt=""
                     />
                   </picture>
@@ -138,17 +136,17 @@
                     <source
                       media="(min-width: 800px)"
                       srcset="
-                        ../images/detail/desktop/image-fylo-preview-2@2x.jpg
+                        ../images/detail/desktop/image-manage-preview-2@2x.jpg
                       "
                     />
                     <source
                       media="(min-width: 600px)"
                       srcset="
-                        ../images/detail/tablet/image-fylo-preview-2@2x.jpg
+                        ../images/detail/tablet/image-manage-preview-2@2x.jpg
                       "
                     />
                     <img
-                      src="../images/detail/mobile/image-fylo-preview-2@2x.jpg"
+                      src="../images/detail/mobile/image-manage-preview-2@2x.jpg"
                       alt=""
                     />
                   </picture>
@@ -160,24 +158,24 @@
           <div class="slide-control">
             <div class="prev">
               <div class="slide-btn">
-                <a href="insure.html" aria-label="previous project button">
+                <a href="fylo.html" aria-label="previous project button">
                   <img src="../images/icons/arrow-left.svg" alt="" />
                 </a>
               </div>
               <div>
-                <h3>Insure</h3>
+                <h3>Fylo</h3>
                 <p class="faint-text">Previous Project</p>
               </div>
             </div>
 
             <div class="next">
               <div class="slide-btn">
-                <a href="manage.html" aria-label="next project button">
+                <a href="bookmark.html" aria-label="next project button">
                   <img src="../images/icons/arrow-right.svg" alt="" />
                 </a>
               </div>
               <div>
-                <h3>Manage</h3>
+                <h3>Bookmark</h3>
                 <p class="faint-text">Next Project</p>
               </div>
             </div>
@@ -189,7 +187,7 @@
     <aside id="contact">
       <div class="container contact-me">
         <h2>Interested in doing a project together?</h2>
-        <a href="contact.html" class="btn btn--primary">Contact Me</a>
+        <a href="../contact.html" class="btn btn--primary">Contact Me</a>
       </div>
     </aside>
 
