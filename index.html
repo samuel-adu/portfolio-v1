@@ -25,7 +25,9 @@
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <img src="images/logo.svg" alt="" />
+            <a href="index.html">
+              <img src="images/logo.svg" alt="" />
+            </a>
           </div>
 
           <button type="menu" class="nav-toggle" aria-label="toggle navigation">
@@ -47,10 +49,10 @@
                 <a class="nav__link active-page" href="index.html"> Home</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html">Portfolio</a>
+                <a class="nav__link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
-                <a class="btn btn--secondary" href="pages/contact.html">
+                <a class="btn btn--secondary" href="contact.html">
                   Contact Me
                 </a>
               </li>
@@ -173,12 +175,155 @@
 
               <p>I’d love you to check out my work.</p>
 
-              <a href="pages/portfolio.html" class="btn btn--primary">
+              <a href="portfolio.html" class="btn btn--primary">
                 View My Projects
               </a>
             </div>
           </section>
         </div>
+      </div>
+
+      <div class="container" id="portfolio">
+        <h2>Portfolio</h2>
+        <section class="portfolio__item manage">
+          <div class="portfolio__img">
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="
+                  ../images/portfolio/desktop/image-portfolio-manage@2x.jpg
+                "
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="
+                  ../images/portfolio/tablet/image-portfolio-manage@2x.jpg
+                "
+              />
+              <img
+                src="../images/portfolio/mobile/image-portfolio-manage@2x.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="portfolio__body">
+            <h3>Manage</h3>
+            <p>
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <a href="./portfolio/manage.html" class="btn btn--primary">
+              View Project
+            </a>
+          </div>
+        </section>
+
+        <section class="portfolio__item bookmark">
+          <div class="portfolio__img">
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="
+                  ../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg
+                "
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="
+                  ../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg
+                "
+              />
+              <img
+                src="../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="portfolio__body">
+            <h3>Bookmark</h3>
+            <p>
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              features div.
+            </p>
+            <a href="./portfolio/bookmark.html" class="btn btn--primary">
+              View Project
+            </a>
+          </div>
+        </section>
+
+        <section class="portfolio__item insure">
+          <div class="portfolio__img">
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="
+                  ../images/portfolio/desktop/image-portfolio-insure@2x.jpg
+                "
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="
+                  ../images/portfolio/tablet/image-portfolio-insure@2x.jpg
+                "
+              />
+              <img
+                src="../images/portfolio/mobile/image-portfolio-insure@2x.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="portfolio__body">
+            <h3>Insure</h3>
+            <p>
+              This was a small project which mostly consisted of HTML and CSS. I
+              built a fully-responsive landing page. The only JavaScript this
+              project required was to enable the toggling of the mobile
+              navigation.
+            </p>
+            <a href="./portfolio/insure.html" class="btn btn--primary">
+              View Project
+            </a>
+          </div>
+        </section>
+
+        <section class="portfolio__item fylo">
+          <div class="portfolio__img">
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="../images/portfolio/desktop/image-portfolio-fylo@2x.jpg"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="../images/portfolio/tablet/image-portfolio-fylo@2x.jpg"
+              />
+              <img
+                src="../images/portfolio/mobile/image-portfolio-fylo@2x.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="portfolio__body">
+            <h3>Fylo</h3>
+            <p>
+              This project was built in pure HTML and CSS. I had mobile and
+              desktop designs to work to and built it so that it was
+              fully-responsive. I took a mobile-first approach and used modern
+              CSS like Flexbox and Grid for layout purposes.
+            </p>
+            <a href="./portfolio/fylo.html" class="btn btn--primary">
+              View Project
+            </a>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -186,7 +331,7 @@
       <div class="container contact-me">
         <h2>Interested in doing a project together?</h2>
 
-        <a href="pages/contact.html" class="btn btn--primary">Contact Me</a>
+        <a href="contact.html" class="btn btn--primary">Contact Me</a>
       </div>
     </aside>
 
@@ -208,10 +353,10 @@
                 <a class="nav__link" href="index.html"> Home </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/portfolio.html"> Portfolio </a>
+                <a class="nav__link" href="portfolio.html"> Portfolio </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="pages/contact.html"> Contact Me </a>
+                <a class="nav__link" href="contact.html"> Contact Me </a>
               </li>
             </ul>
           </div>
@@ -252,6 +397,6 @@
       </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
