@@ -15,169 +15,162 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="../index.html">
-              <img src="../images/logo.svg" alt="" />
+    <div class="navbar container">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/logo.svg" alt="" />
+        </a>
+      </div>
+      <button type="menu" class="nav-toggle" aria-label="toggle navigation">
+        <img
+          src="../images/icons/hamburger.svg"
+          class="hamburger-open"
+          aria-hidden="true"
+        />
+        <img
+          src="../images/icons/close.svg"
+          class="hamburger-close"
+          aria-hidden="true"
+        />
+      </button>
+      <nav role="navigation" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="../index.html"> Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="../portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a class="btn btn--secondary" href="../contact.html">
+              Contact Me
             </a>
-          </div>
-          <button type="menu" class="nav-toggle" aria-label="toggle navigation">
-            <img
-              src="../images/icons/hamburger.svg"
-              class="hamburger-open"
-              aria-hidden="true"
-            />
-            <img
-              src="../images/icons/close.svg"
-              class="hamburger-close"
-              aria-hidden="true"
-            />
-          </button>
-          <nav role="navigation" class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="../index.html"> Home</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="../portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav__item">
-                <a class="btn btn--secondary" href="../contact.html">
-                  Contact Me
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-        <div class="hero">
-          <picture class="hero__img">
-            <source
-              media="(min-width: 800px)"
-              srcset="../images/detail/desktop/image-manage-hero@2x.jpg"
-            />
-            <source
-              media="(min-width: 600px)"
-              srcset="../images/detail/tablet/image-manage-hero@2x.jpg"
-            />
-            <img
-              src="../images/detail/mobile/image-manage-hero@2x.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
+    <header>
+      <div class="hero container">
+        <picture class="hero__img">
+          <source
+            media="(min-width: 800px)"
+            srcset="../images/detail/desktop/image-manage-hero@2x.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../images/detail/tablet/image-manage-hero@2x.jpg"
+          />
+          <img src="../images/detail/mobile/image-manage-hero@2x.jpg" alt="" />
+        </picture>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <section>
-          <div class="project">
-            <div class="project-intro">
-              <h2>Manage</h2>
+        <article class="project">
+          <div class="project-intro">
+            <h2>Manage</h2>
+            <p>
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <p class="cyan-text">HTML | CSS | JS</p>
+            <a
+              href="http://manage-landing-page-theadusamuel.vercel.app/"
+              target="_blank"
+              class="btn btn--primary"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          <div class="project-details">
+            <div class="project-background">
+              <h3>Project Background</h3>
               <p>
-                This project required me to build a fully responsive landing
-                page to the designs provided. I used HTML5, along with CSS Grid
-                and JavaScript for the areas that required interactivity, such
-                as the testimonial slider.
+                This project was a front-end challenge from Frontend Mentor.
+                It’s a platform that enables you to practice building websites
+                to a design and project brief. Each challenge includes mobile
+                and desktop designs to show how the website should look at
+                different screen sizes. Creating these projects has helped me
+                refine my workflow and solve real-world coding problems. I’ve
+                learned something new with each project, helping me to improve
+                and adapt my style.
               </p>
-              <p class="cyan-text">HTML | CSS | JS</p>
-              <a
-                href="http://manage-landing-page-theadusamuel.vercel.app/"
-                target="_blank"
-                class="btn btn--primary"
-              >
-                Visit Website
-              </a>
             </div>
 
-            <div class="project-details">
-              <div class="project-background">
-                <h3>Project Background</h3>
-                <p>
-                  This project was a front-end challenge from Frontend Mentor.
-                  It’s a platform that enables you to practice building websites
-                  to a design and project brief. Each challenge includes mobile
-                  and desktop designs to show how the website should look at
-                  different screen sizes. Creating these projects has helped me
-                  refine my workflow and solve real-world coding problems. I’ve
-                  learned something new with each project, helping me to improve
-                  and adapt my style.
-                </p>
+            <div class="project-preview">
+              <h3>Static Previews</h3>
+              <div class="preview-img preview-img-1">
+                <picture>
+                  <source
+                    media="(min-width: 800px)"
+                    srcset="
+                      ../images/detail/desktop/image-manage-preview-1@2x.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 600px)"
+                    srcset="
+                      ../images/detail/tablet/image-manage-preview-1@2x.jpg
+                    "
+                  />
+                  <img
+                    src="../images/detail/mobile/image-manage-preview-1@2x.jpg"
+                    alt=""
+                  />
+                </picture>
               </div>
 
-              <div class="project-preview">
-                <h3>Static Previews</h3>
-                <div class="preview-img preview-img-1">
-                  <picture>
-                    <source
-                      media="(min-width: 800px)"
-                      srcset="
-                        ../images/detail/desktop/image-manage-preview-1@2x.jpg
-                      "
-                    />
-                    <source
-                      media="(min-width: 600px)"
-                      srcset="
-                        ../images/detail/tablet/image-manage-preview-1@2x.jpg
-                      "
-                    />
-                    <img
-                      src="../images/detail/mobile/image-manage-preview-1@2x.jpg"
-                      alt=""
-                    />
-                  </picture>
-                </div>
-
-                <div class="preview-img">
-                  <picture>
-                    <source
-                      media="(min-width: 800px)"
-                      srcset="
-                        ../images/detail/desktop/image-manage-preview-2@2x.jpg
-                      "
-                    />
-                    <source
-                      media="(min-width: 600px)"
-                      srcset="
-                        ../images/detail/tablet/image-manage-preview-2@2x.jpg
-                      "
-                    />
-                    <img
-                      src="../images/detail/mobile/image-manage-preview-2@2x.jpg"
-                      alt=""
-                    />
-                  </picture>
-                </div>
+              <div class="preview-img">
+                <picture>
+                  <source
+                    media="(min-width: 800px)"
+                    srcset="
+                      ../images/detail/desktop/image-manage-preview-2@2x.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 600px)"
+                    srcset="
+                      ../images/detail/tablet/image-manage-preview-2@2x.jpg
+                    "
+                  />
+                  <img
+                    src="../images/detail/mobile/image-manage-preview-2@2x.jpg"
+                    alt=""
+                  />
+                </picture>
               </div>
             </div>
           </div>
+        </article>
 
-          <div class="slide-control">
-            <div class="prev">
-              <div class="slide-btn">
-                <a href="fylo.html" aria-label="previous project button">
-                  <img src="../images/icons/arrow-left.svg" alt="" />
-                </a>
-              </div>
-              <div>
-                <h3>Fylo</h3>
-                <p class="faint-text">Previous Project</p>
-              </div>
+        <section class="slide-control">
+          <div class="prev">
+            <div class="slide-btn">
+              <a href="fylo.html" aria-label="previous project button">
+                <img src="../images/icons/arrow-left.svg" alt="" />
+              </a>
             </div>
+            <div>
+              <h3>Fylo</h3>
+              <p class="faint-text">Previous Project</p>
+            </div>
+          </div>
 
-            <div class="next">
-              <div class="slide-btn">
-                <a href="bookmark.html" aria-label="next project button">
-                  <img src="../images/icons/arrow-right.svg" alt="" />
-                </a>
-              </div>
-              <div>
-                <h3>Bookmark</h3>
-                <p class="faint-text">Next Project</p>
-              </div>
+          <div class="next">
+            <div class="slide-btn">
+              <a href="bookmark.html" aria-label="next project button">
+                <img src="../images/icons/arrow-right.svg" alt="" />
+              </a>
+            </div>
+            <div>
+              <h3>Bookmark</h3>
+              <p class="faint-text">Next Project</p>
             </div>
           </div>
         </section>
