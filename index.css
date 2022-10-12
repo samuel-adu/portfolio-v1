@@ -71,22 +71,23 @@ h3 {
 }
 
 h1 {
-  font-size: 3.125rem;
-  /* font-size: calc(2rem + 3vw); */
   line-height: 50px;
   font-weight: 700;
 }
 
+h1 span {
+  font-size: 3.125rem;
+  display: block;
+}
+
 h2 {
   font-size: 2.5rem;
-  /* font-size: calc(1.75rem + 3vw); */
   line-height: 42px;
   font-weight: 700;
 }
 
 h3 {
   font-size: 2rem;
-  /* font-size: calc(0.75rem + 3vw); */
   line-height: 36px;
   font-weight: 400;
 }
@@ -174,7 +175,7 @@ h3 {
 /* || Utilities =====================================================*/
 
 .btn {
-  padding: 0.75em 2.25em;
+  padding: 0.25em 1.5em;
   transition: transform 200ms ease-in-out;
   display: inline-block;
   cursor: pointer;
@@ -251,10 +252,10 @@ aside {
 }
 
 .intro {
-  /* padding-top: 2em; */
   min-height: calc(100vh - 100px);
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills {
@@ -408,7 +409,9 @@ label {
     margin: 0 auto;
   }
 
-  /* Header */
+  .intro {
+    width: 50%;
+  }
 
   .nav-toggle {
     display: none;
@@ -442,7 +445,6 @@ label {
 
   .main-content {
     display: flex;
-    justify-content: space-between;
   }
 
   .skills {
@@ -455,7 +457,7 @@ label {
   }
 
   .about-me {
-    width: 45%;
+    width: 100%;
   }
 
   .contact-me {
@@ -539,9 +541,8 @@ label {
     max-width: 1300px;
   }
 
-  h1 {
+  h1 span {
     font-size: 3.125rem;
-    line-height: 50px;
   }
 
   .contact-body,
