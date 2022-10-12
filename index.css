@@ -56,9 +56,12 @@ a {
 /* || Typography ========================================*/
 h1,
 h2,
-h3,
-p {
+h3 {
   margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 h1,
@@ -222,7 +225,7 @@ h3 {
 /* || General Styles =============================================*/
 
 .container {
-  padding: 0 2em;
+  padding-inline: 2em;
 }
 
 header {
@@ -234,10 +237,8 @@ header {
   margin-bottom: 0;
 }
 
-section {
-  margin-bottom: 5em;
-}
-
+section,
+article,
 aside {
   margin-bottom: 5em;
 }
@@ -246,11 +247,14 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0;
+  padding-block: 2em;
 }
 
 .intro {
-  padding-top: 2em;
+  /* padding-top: 2em; */
+  min-height: calc(100vh - 100px);
+  display: grid;
+  place-content: center;
 }
 
 .skills {
@@ -406,10 +410,6 @@ label {
 
   /* Header */
 
-  header {
-    position: relative;
-  }
-
   .nav-toggle {
     display: none;
   }
@@ -438,15 +438,6 @@ label {
     color: var(--clr-accent);
     /* border-bottom: 3px solid var(--clr-accent); */
     font-weight: 700;
-  }
-
-  .intro {
-    background-color: var(--bg-light);
-    position: absolute;
-    bottom: 0;
-    width: 25%;
-    min-width: 375px;
-    padding-right: 1em;
   }
 
   .main-content {

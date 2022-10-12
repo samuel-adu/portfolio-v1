@@ -21,62 +21,45 @@
   </head>
 
   <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="" />
+          </a>
+        </div>
+
+        <button type="menu" class="nav-toggle" aria-label="toggle navigation">
+          <img
+            src="images/icons/hamburger.svg"
+            class="hamburger-open"
+            aria-hidden="true"
+          />
+          <img
+            src="images/icons/close.svg"
+            class="hamburger-close"
+            aria-hidden="true"
+          />
+        </button>
+
+        <nav role="navigation" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active-page" href="index.html"> Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a class="btn btn--secondary" href="contact.html"> Contact Me </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <header>
       <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html">
-              <img src="images/logo.svg" alt="" />
-            </a>
-          </div>
-
-          <button type="menu" class="nav-toggle" aria-label="toggle navigation">
-            <img
-              src="images/icons/hamburger.svg"
-              class="hamburger-open"
-              aria-hidden="true"
-            />
-            <img
-              src="images/icons/close.svg"
-              class="hamburger-close"
-              aria-hidden="true"
-            />
-          </button>
-
-          <nav role="navigation" class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link active-page" href="index.html"> Home</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav__item">
-                <a class="btn btn--secondary" href="contact.html">
-                  Contact Me
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="hero">
-          <picture class="hero__img">
-            <source
-              media="(min-width: 800px)"
-              srcset="images/homepage/desktop/image-homepage-hero@2x.jpg"
-            />
-            <source
-              media="(min-width: 600px)"
-              srcset="images/homepage/tablet/image-homepage-hero@2x.jpg"
-            />
-            <img
-              src="images/homepage/mobile/image-homepage-hero@2x.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
-
         <div class="intro">
           <h1>Hey, I’m Samuel Adu and I am a Frontend Developer</h1>
 
@@ -95,7 +78,7 @@
     <main>
       <div class="container">
         <div class="main-content">
-          <section class="my-skills">
+          <!-- <section class="my-skills">
             <h2>My Skills</h2>
 
             <div class="skills">
@@ -153,7 +136,7 @@
                 <figcaption>Git</figcaption>
               </div>
             </div>
-          </section>
+          </section> -->
 
           <section class="about-me">
             <div id="about" class="about">
@@ -183,8 +166,8 @@
         </div>
       </div>
 
-      <div class="container" id="portfolio">
-        <h2>Portfolio</h2>
+      <!-- <div class="container" id="portfolio">
+        <h2>My Projects</h2>
         <section class="portfolio__item manage">
           <div class="portfolio__img">
             <picture>
@@ -324,7 +307,7 @@
             </a>
           </div>
         </section>
-      </div>
+      </div> -->
     </main>
 
     <aside id="contact-me">
